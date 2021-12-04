@@ -7,9 +7,9 @@ A primeira parte ficaria:
 ```nim
 var x,y = 0
 
-proc forward(a:int) = x+=a
-proc up(a:int) =      y-=a
-proc down(a:int) =    y+=a
+proc forward(v:int) = x+=v
+proc up(v:int)      = y-=v
+proc down(v:int)    = y+=v
 
 include "day2.sample"
 
@@ -21,15 +21,9 @@ E a segunda:
 ```nim
 var x,y,aim = 0
 
-proc forward(a:int) = 
-    x+=a
-    y+=(aim*a)
-    
-proc up(a:int) =      
-    aim-=a
-
-proc down(a:int) =    
-    aim+=a
+proc forward(v:int) = x+=v; y+=(aim*v)
+proc up(v:int)      = aim-=v
+proc down(v:int)    = aim+=v
 
 include "day2.data"
 
