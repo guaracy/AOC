@@ -14,6 +14,7 @@ func threeMeasurement(s: seq[int]): seq[int] =
   for ix in 0 .. s.high-2:
     result.add s[ix .. ix+2].foldl(a + b)
 
+# Solve
 proc solveProblem(s1,s2:seq[int]) =
   echo "Part 1 : ",data.countIncrease
   echo "Part 2 : ",newData.countIncrease
