@@ -15,7 +15,7 @@ proc crescimento(s:seq[int],days:int):int =
     result = peixes.high+1
 ```
 
-P.S. Ok, estou aprendendo, mas ```peixes.len``` seria o mais indicado.
+P.S. Ok, estou aprendendo, mas ```result = peixes.len``` seria o mais indicado.
 
 Com 5 peixes, resolveu o problema para 18 e 80 dias. Para a parte dois que pedia 256 dias a rotina se mostrou impraticável. Só um Ctrl+C para finalizar. A solução foi refazer o algoritmo que resultou em um tempo muito bom. 
 
