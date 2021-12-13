@@ -10,3 +10,5 @@ Decidi resolver os problemas do AOC - 2021 apenas para aprender um pouco de Nim.
 
 Como é para aprender um pouco da linguagem, não estou preocupado com a pontuação (até por ter que procurar informações ou resolver as mensagens de erro emitidas na compilação). Outro motivo é o horário que os problemas são disponibilizados. As 2h já estou com sono para raciocinar rápido. Me contento com as duas estrelinhas recebidas por problema.
 
+- [x] [Dia 1](day01)
+- [ ] [Dia 2](day02)
