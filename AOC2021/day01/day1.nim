@@ -1,8 +1,5 @@
 import sequtils, strutils
 
-var
-  data, newData : seq[int]
-
 # Parte 1
 func countIncrease(s: seq[int]): int =
   for idx in 1 .. s.high:
@@ -15,16 +12,20 @@ func threeMeasurement(s: seq[int]): seq[int] =
     result.add s[ix .. ix+2].foldl(a + b)
 
 # Solve
-proc solveProblem(s1,s2:seq[int]) =
-  echo "Part 1 : ",data.countIncrease
-  echo "Part 2 : ",newData.countIncrease
+proc solvePuzzle(s:seq[int]) =
+  echo "Part 1 = ",s.countIncrease
+  echo "Part 2 = ",s.threeMeasurement.countIncrease
+
+var 
+  data = "day1.sample".lines.toSeq.map(parseInt)
 
 echo "Sample"
-data = "day1.sample".lines.toSeq.map(parseInt)
-newData = data.threeMeasurement
-solveProblem data, newData
+solvePuzzle data
+
+data = "day1.data"
+  .lines
+  .toSeq
+  .map parseInt
 
 echo "\nData"
-data = "day1.data".lines.toSeq.map(parseInt)
-newData = data.threeMeasurement
-solveProblem data, newData
+solvePuzzle data
