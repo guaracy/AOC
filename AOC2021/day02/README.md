@@ -1,6 +1,6 @@
 [Problema](https://adventofcode.com/2021/day/2)
 
-Existia uma maneira interessante de resolver o problema as deveriam ser feitos dois programas para a resolução. 
+Existia uma maneira interessante de resolver o problema mas deveriam ser feitos dois programas para a resolução. 
 
 A primeira parte ficaria:
 
